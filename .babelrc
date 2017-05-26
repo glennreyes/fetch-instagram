@@ -1,0 +1,15 @@
+{
+  "plugins": ["transform-flow-strip-types"],
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions", "> 1%"],
+          "node": true
+        }
+      }
+    ],
+    "stage-3",
+  ]
+}

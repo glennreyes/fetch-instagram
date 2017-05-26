@@ -1,0 +1,16 @@
+machine:
+  node:
+    version: node
+
+dependencies:
+  override:
+    - yarn
+  cache_directories:
+    - ~/.cache/yarn
+    - node_modules
+
+test:
+  pre:
+    - yarn run flow
+  override:
+    - yarn run test

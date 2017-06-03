@@ -76,7 +76,6 @@ const query: QueryFn = ({
   )
     .then(handleErrors)
     .then(res => res.json())
-    .then(({ data }) => data)
 }
 
 /**

@@ -10,7 +10,7 @@
   "scripts": {
     "build": "babel index.js -d build",
     "flow": "flow check",
-    "prepublish": "yarn run build",
+    "prepare": "yarn run build",
     "precommit": "lint-staged",
     "prettier": "prettier --no-semi --single-quote --trailing-comma all --parser flow --write index.js",
     "test": "jest --coverage index"
